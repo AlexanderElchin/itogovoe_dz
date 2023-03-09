@@ -19,8 +19,8 @@ void Itog()
 {
     Console.Write("Введите массив строк через запятую: "); //если после запятой будет пробел, то программа сичает его за элемент.
     string text = Console.ReadLine()!;
-    string[] existArray = text.Split(",");
-    string[] newArray = existArray.Where(text => text.Length < 4).ToArray();
+    string[] Array = text.Split(",");
+    string[] newArray = Array.Where(text => text.Length < 4).ToArray();
 
     Console.WriteLine("Массив из строк, длина которых меньше либо равна 3:  ");
     Console.WriteLine(String.Join(", ", newArray));
